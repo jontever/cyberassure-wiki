@@ -19,11 +19,11 @@ hero:
 features:
   - icon: 🏗️
     title: Foundations
-    details: Secure system design, DARIOM lifecycle, zero trust principles, and time-based security.
+    details: Secure system design, DARIOM lifecycle, zero trust principles, time-based security, and post-quantum cryptography.
     link: /foundations/
   - icon: 🕵️
     title: Threat Intelligence
-    details: Threat modelling with MITRE ATT&CK, vulnerability analysis, and data flow analysis.
+    details: MITRE ATT&CK threat modelling, vulnerability analysis, ransomware defence, and frontier AI threats.
     link: /threat-intelligence/
   - icon: 🌐
     title: Network Security
@@ -47,10 +47,18 @@ features:
     link: /identity-access/
   - icon: 📱
     title: Endpoint & Device
-    details: Mobile device management, private cloud, and endpoint security architecture.
+    details: MDM, EDR, IoT security, private cloud, and endpoint security architecture.
     link: /endpoint-device/
   - icon: 📊
-    title: AI, Analytics & SIEM
-    details: Security analytics, AI-driven detection, SIEM architecture, and threat hunting.
+    title: Analytics & Detection
+    details: Security logging, SIEM architecture, AI-driven detection, SOAR, and threat hunting.
     link: /analytics/
+  - icon: 🏛️
+    title: Risk & Governance
+    details: Asset management, supply chain security, NCSC CAF, Cyber Essentials, OPSEC, people-centred security, and penetration testing.
+    link: /risk-governance/
 ---
+
+## Attributions
+
+MITRE ATT&CK® is a registered trademark of The MITRE Corporation. This wiki is an independent community resource and is not affiliated with or endorsed by MITRE, NIST, NCSC, CIS, or any vendor mentioned. Content is provided for educational purposes under the MIT Licence.

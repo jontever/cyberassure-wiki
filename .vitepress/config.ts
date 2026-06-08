@@ -19,6 +19,7 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Foundations', link: '/foundations/' },
+      { text: 'Threats', link: '/threat-intelligence/' },
       { text: 'Network Security', link: '/network-security/' },
       { text: 'Application Security', link: '/network-app-security/' },
       { text: 'Identity & Data', link: '/identity-access/' },
@@ -29,6 +30,7 @@ export default defineConfig({
           { text: 'Data Security', link: '/data-security/' },
           { text: 'Endpoint & Device', link: '/endpoint-device/' },
           { text: 'Analytics & SIEM', link: '/analytics/' },
+          { text: 'Risk & Governance', link: '/risk-governance/' },
         ]
       },
       { text: 'GitHub', link: 'https://github.com/jontever/cyberassure-wiki', target: '_blank' },
@@ -45,6 +47,7 @@ export default defineConfig({
             { text: 'DARIOM Lifecycle', link: '/foundations/dariom-lifecycle' },
             { text: 'Zero Trust Principles', link: '/foundations/zero-trust-principles' },
             { text: 'Time-Based Security', link: '/foundations/time-based-security' },
+            { text: 'Post-Quantum Cryptography', link: '/foundations/post-quantum-cryptography' },
           ]
         }
       ],
@@ -56,6 +59,8 @@ export default defineConfig({
             { text: 'Overview', link: '/threat-intelligence/' },
             { text: 'Threat Modelling with MITRE ATT&CK', link: '/threat-intelligence/threat-modeling-mitre' },
             { text: 'Threat, Vulnerability & Data Flow Analysis', link: '/threat-intelligence/threat-vulnerability-analysis' },
+            { text: 'Ransomware', link: '/threat-intelligence/ransomware' },
+            { text: 'Frontier AI & AI-Powered Threats', link: '/threat-intelligence/frontier-ai-threats' },
           ]
         }
       ],
@@ -134,6 +139,7 @@ export default defineConfig({
           items: [
             { text: 'Overview', link: '/endpoint-device/' },
             { text: 'MDM & Private Cloud', link: '/endpoint-device/mdm-private-cloud' },
+            { text: 'IoT Security', link: '/endpoint-device/iot-security' },
           ]
         }
       ],
@@ -143,7 +149,24 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: 'Overview', link: '/analytics/' },
+            { text: 'Security Logging', link: '/analytics/logging' },
             { text: 'AI, Analytics & SIEM', link: '/analytics/ai-analytics-siem' },
+          ]
+        }
+      ],
+      '/risk-governance/': [
+        {
+          text: 'Risk & Governance',
+          collapsed: false,
+          items: [
+            { text: 'Overview', link: '/risk-governance/' },
+            { text: 'Asset Management', link: '/risk-governance/asset-management' },
+            { text: 'Supply Chain Security', link: '/risk-governance/supply-chain-security' },
+            { text: 'Cyber Assessment Framework', link: '/risk-governance/cyber-assessment-framework' },
+            { text: 'Cyber Essentials', link: '/risk-governance/cyber-essentials' },
+            { text: 'Operational Security (OPSEC)', link: '/risk-governance/operational-security' },
+            { text: 'People-Centred Security', link: '/risk-governance/people-centred-security' },
+            { text: 'Penetration Testing', link: '/risk-governance/penetration-testing' },
           ]
         }
       ],
