@@ -51,6 +51,33 @@ EDR posture signals feed MDM/Conditional Access to enforce device health require
 - **SentinelOne** — autonomous response (ActiveEDR); good Linux/macOS coverage
 - **Palo Alto Cortex XDR** — integrates with Prisma Access / NGFW
 
+## Endpoint Protection Platform (EPP)
+
+EPP is the preventative layer of endpoint security, focused on stopping threats before execution. It is distinct from EDR, which provides detection and response after an event. Modern endpoint security platforms combine both.
+
+### EPP capabilities
+
+| Capability | Description |
+|-----------|-------------|
+| Anti-malware | Signature-based detection of known malware; updated continuously |
+| Behavioural prevention | ML-based detection of malicious behaviour patterns without signatures |
+| Exploit prevention | Blocks exploitation of memory vulnerabilities (e.g., buffer overflow, heap spray) |
+| Device control | Manages USB and removable media; blocks unauthorised storage devices |
+| Application control | Allow-listing or block-listing of applications; prevents execution of untrusted code |
+| Web filtering | Blocks access to malicious or policy-prohibited URLs at the endpoint level |
+| Firewall (host-based) | Controls inbound and outbound connections at the endpoint |
+
+### EPP vs EDR
+
+| Dimension | EPP | EDR |
+|-----------|-----|-----|
+| Primary goal | Prevent threats | Detect and respond to threats |
+| Data collected | Minimal (prevention-focused) | Rich telemetry (process, file, network, registry) |
+| Response | Automated block/quarantine | Investigation, containment, remediation |
+| Coverage | Known and behavioural threats | Unknown and advanced threats; post-compromise activity |
+
+Most modern platforms integrate EPP and EDR in a single agent. Leading unified platforms include Microsoft Defender for Endpoint, CrowdStrike Falcon, and SentinelOne Singularity.
+
 ## Private cloud device security
 
 ### Virtual desktop infrastructure (VDI)
@@ -71,6 +98,31 @@ Cloud-based development environments (AWS Cloud9, GitHub Codespaces, Coder) move
 ### Secure enclave / containerised workspace
 
 Mobile platforms: Samsung Knox Workspace, Microsoft Intune MAM (managed app container), Apple Managed Open In. Work data is isolated in an encrypted container; personal apps cannot access it.
+
+### DaaS — Desktop as a Service
+
+DaaS is a cloud-delivered, subscription form of VDI where a third-party provider hosts and manages the virtual desktop infrastructure:
+
+- The customer provisions and manages the desktops; the provider manages the underlying compute, storage, and networking
+- Eliminates the capital cost and operational burden of on-premises VDI infrastructure
+- Desktops stream to thin clients or standard devices over the network
+- Security considerations match VDI (no data on endpoint, centralised control) with the addition of cloud shared-responsibility considerations
+
+Examples: Azure Virtual Desktop (AVD), Amazon WorkSpaces, Citrix DaaS.
+
+**Security benefits:** user data never leaves the cloud environment; endpoints are zero-footprint clients; golden images are centrally managed and patched.
+
+**Security considerations:** access depends on network connectivity; identity controls (SSO, MFA, Conditional Access) are the primary perimeter; DaaS providers must be assessed against cloud security requirements (encryption, logging, data residency).
+
+### DCaaS — Data Centre as a Service
+
+DCaaS delivers data-centre infrastructure — compute, storage, networking, and physical facilities — as an on-demand, managed service rather than owned and operated in-house. The customer provisions capacity; the provider manages the physical layer, power, cooling, and hardware.
+
+DCaaS sits between co-location (customer manages hardware in a third-party facility) and public IaaS (provider manages both hardware and hypervisor). It is used where organisations need dedicated, physically isolated infrastructure without the capital expense of ownership.
+
+**Security responsibilities:** the provider is responsible for physical security, hardware integrity, and network fabric; the customer retains responsibility for the OS, applications, data, and logical security controls — similar to IaaS.
+
+**Key considerations:** physical security accreditation (ISO 27001, SOC 2 Type II); data residency guarantees; network connectivity resilience; audit rights and transparency.
 
 ## Device lifecycle
 

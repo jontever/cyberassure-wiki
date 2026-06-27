@@ -23,6 +23,7 @@ export default defineConfig({
       { text: 'Network Security', link: '/network-security/' },
       { text: 'Application Security', link: '/network-app-security/' },
       { text: 'Identity & Data', link: '/identity-access/' },
+      { text: 'Cloud Security', link: '/cloud-security/' },
       {
         text: 'More',
         items: [
@@ -105,6 +106,8 @@ export default defineConfig({
             { text: 'Secure Remote Access', link: '/network-app-security/secure-remote-access' },
             { text: 'VPNs, ZTNA & SASE', link: '/network-app-security/vpn-ztna-sase' },
             { text: 'Network Encryption', link: '/network-app-security/network-encryption' },
+            { text: 'Application Security Testing (SAST, DAST, IAST, RASP)', link: '/network-app-security/application-security-testing' },
+            { text: 'Container & Kubernetes Security', link: '/network-app-security/container-security' },
           ]
         }
       ],
@@ -115,6 +118,7 @@ export default defineConfig({
           items: [
             { text: 'Overview', link: '/data-security/' },
             { text: 'Data-Centric Security', link: '/data-security/data-centric-security' },
+            { text: 'Data Classification & Protective Marking', link: '/data-security/data-classification-protective-marking' },
             { text: 'Web Application Firewalls', link: '/data-security/web-application-firewalls' },
             { text: 'Database Firewalls & Activity Monitoring', link: '/data-security/database-firewalls' },
           ]
@@ -151,6 +155,17 @@ export default defineConfig({
             { text: 'Overview', link: '/analytics/' },
             { text: 'Security Logging', link: '/analytics/logging' },
             { text: 'AI, Analytics & SIEM', link: '/analytics/ai-analytics-siem' },
+          ]
+        }
+      ],
+      '/cloud-security/': [
+        {
+          text: 'Cloud Security',
+          collapsed: false,
+          items: [
+            { text: 'Overview', link: '/cloud-security/' },
+            { text: 'Cloud Service Models (IaaS, PaaS, SaaS, FaaS)', link: '/cloud-security/cloud-service-models' },
+            { text: 'CSPM & Cloud Workload Protection (CWPP)', link: '/cloud-security/cspm-cwpp' },
           ]
         }
       ],
