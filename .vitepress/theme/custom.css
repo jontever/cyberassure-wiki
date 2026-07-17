@@ -1,14 +1,77 @@
-:root {
-  --vp-c-brand-1: #3b82f6;
-  --vp-c-brand-2: #2563eb;
-  --vp-c-brand-3: #1d4ed8;
-  --vp-c-brand-soft: rgba(59, 130, 246, 0.14);
-}
+/* ─── Brand palettes ───────────────────────────────────────────────────────
+   Each named palette (selected via the ThemeSwitcher pill) sets VitePress
+   brand variables. Light and dark variants are both defined so palettes work
+   alongside VitePress's built-in dark/light toggle. */
 
-.dark {
+/* Ocean (default) */
+:root,
+html[data-theme='default'] {
+  --vp-c-brand-1: #2563eb;
+  --vp-c-brand-2: #1d4ed8;
+  --vp-c-brand-3: #1e40af;
+  --vp-c-brand-soft: rgba(37, 99, 235, 0.14);
+}
+html[data-theme='default'].dark {
   --vp-c-brand-1: #60a5fa;
   --vp-c-brand-2: #3b82f6;
   --vp-c-brand-3: #2563eb;
+  --vp-c-brand-soft: rgba(96, 165, 250, 0.16);
+}
+
+/* Midnight (violet) */
+html[data-theme='midnight'] {
+  --vp-c-brand-1: #7c3aed;
+  --vp-c-brand-2: #6d28d9;
+  --vp-c-brand-3: #5b21b6;
+  --vp-c-brand-soft: rgba(124, 58, 237, 0.14);
+}
+html[data-theme='midnight'].dark {
+  --vp-c-brand-1: #a78bfa;
+  --vp-c-brand-2: #8b5cf6;
+  --vp-c-brand-3: #7c3aed;
+  --vp-c-brand-soft: rgba(167, 139, 250, 0.16);
+}
+
+/* Forest (emerald) */
+html[data-theme='forest'] {
+  --vp-c-brand-1: #059669;
+  --vp-c-brand-2: #047857;
+  --vp-c-brand-3: #065f46;
+  --vp-c-brand-soft: rgba(5, 150, 105, 0.14);
+}
+html[data-theme='forest'].dark {
+  --vp-c-brand-1: #34d399;
+  --vp-c-brand-2: #10b981;
+  --vp-c-brand-3: #059669;
+  --vp-c-brand-soft: rgba(52, 211, 153, 0.16);
+}
+
+/* Rose */
+html[data-theme='rose'] {
+  --vp-c-brand-1: #e11d48;
+  --vp-c-brand-2: #be123c;
+  --vp-c-brand-3: #9f1239;
+  --vp-c-brand-soft: rgba(225, 29, 72, 0.14);
+}
+html[data-theme='rose'].dark {
+  --vp-c-brand-1: #fb7185;
+  --vp-c-brand-2: #f43f5e;
+  --vp-c-brand-3: #e11d48;
+  --vp-c-brand-soft: rgba(251, 113, 133, 0.16);
+}
+
+/* Slate */
+html[data-theme='slate'] {
+  --vp-c-brand-1: #475569;
+  --vp-c-brand-2: #334155;
+  --vp-c-brand-3: #1e293b;
+  --vp-c-brand-soft: rgba(71, 85, 105, 0.14);
+}
+html[data-theme='slate'].dark {
+  --vp-c-brand-1: #94a3b8;
+  --vp-c-brand-2: #64748b;
+  --vp-c-brand-3: #475569;
+  --vp-c-brand-soft: rgba(148, 163, 184, 0.16);
 }
 
 /* Tighten sidebar font */
