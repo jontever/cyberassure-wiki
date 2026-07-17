@@ -202,7 +202,8 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/jontever/cyberassure-wiki' }
+      { icon: 'github', link: 'https://github.com/jontever/cyberassure-wiki' },
+      { icon: 'linkedin', link: 'https://www.linkedin.com/in/jonsilvester' }
     ],
   }
 })

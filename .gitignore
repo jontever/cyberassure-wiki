@@ -3,6 +3,3 @@ node_modules/
 .vitepress/cache/
 .DS_Store
 *.log
-
-# VitePress build artifacts
-*.timestamp-*.mjs
