@@ -32,6 +32,7 @@ export default defineConfig({
           { text: 'Endpoint & Device', link: '/endpoint-device/' },
           { text: 'Analytics & SIEM', link: '/analytics/' },
           { text: 'Risk & Governance', link: '/risk-governance/' },
+          { text: 'AI Security', link: '/ai-security/' },
         ]
       },
       { text: 'GitHub', link: 'https://github.com/jontever/cyberassure-wiki', target: '_blank' },
@@ -182,6 +183,18 @@ export default defineConfig({
             { text: 'Operational Security (OPSEC)', link: '/risk-governance/operational-security' },
             { text: 'People-Centred Security', link: '/risk-governance/people-centred-security' },
             { text: 'Penetration Testing', link: '/risk-governance/penetration-testing' },
+          ]
+        }
+      ],
+      '/ai-security/': [
+        {
+          text: 'AI Security Management',
+          collapsed: false,
+          items: [
+            { text: 'Overview', link: '/ai-security/' },
+            { text: 'AI Governance & Program Management', link: '/ai-security/ai-governance-program' },
+            { text: 'AI Risk Management', link: '/ai-security/ai-risk-management' },
+            { text: 'AI Technologies & Controls', link: '/ai-security/ai-security-controls' },
           ]
         }
       ],
