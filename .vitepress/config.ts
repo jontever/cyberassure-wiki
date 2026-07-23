@@ -32,6 +32,7 @@ export default defineConfig({
           { text: 'Endpoint & Device', link: '/endpoint-device/' },
           { text: 'Analytics & SIEM', link: '/analytics/' },
           { text: 'Risk & Governance', link: '/risk-governance/' },
+          { text: 'ISACA AAISM', link: '/aaism/' },
         ]
       },
       { text: 'GitHub', link: 'https://github.com/jontever/cyberassure-wiki', target: '_blank' },
@@ -182,6 +183,18 @@ export default defineConfig({
             { text: 'Operational Security (OPSEC)', link: '/risk-governance/operational-security' },
             { text: 'People-Centred Security', link: '/risk-governance/people-centred-security' },
             { text: 'Penetration Testing', link: '/risk-governance/penetration-testing' },
+          ]
+        }
+      ],
+      '/aaism/': [
+        {
+          text: 'ISACA AAISM',
+          collapsed: false,
+          items: [
+            { text: 'Overview', link: '/aaism/' },
+            { text: 'Domain 1 — AI Governance & Program Management', link: '/aaism/domain-1-governance' },
+            { text: 'Domain 2 — AI Risk Management', link: '/aaism/domain-2-risk-management' },
+            { text: 'Domain 3 — AI Technologies & Controls', link: '/aaism/domain-3-technologies-controls' },
           ]
         }
       ],
